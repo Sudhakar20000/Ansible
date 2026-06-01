@@ -1,0 +1,5 @@
+- name: ping the server
+  hosts: frountend
+  tasks:
+    - name: ping the server
+      ping:
