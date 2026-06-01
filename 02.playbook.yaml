@@ -1,0 +1,6 @@
+- name: demo on debug
+  hostes: frountend
+  taskes:
+    -name: demo on debug
+    debug:
+      msg: "helloworld!     
