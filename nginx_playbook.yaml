@@ -2,13 +2,13 @@
   hosts: frountend
   decome: yes
   tasks:
-    - name: install nginx
-      ansible.buidin.packages:
-        name: nginx
-        state: present
-    - name: start nginx
-      service:
-        name: nginx
-        state: started
-        enabled: yes
+  - name: install nginx
+    ansible.buidin.packages:
+      name: nginx
+      state: present
+  - name: start nginx
+    service:
+      name: nginx
+      state: started
+      enabled: yes
       
