@@ -6,4 +6,4 @@
     Location: "HYD"
   tasks:
   - debug:
-    msg: "My name is {{NAME}} and i am from {{Location}}"
+      msg: "My name is {{NAME}} and i am from {{Location}}"
