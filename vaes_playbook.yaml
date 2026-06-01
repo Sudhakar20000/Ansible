@@ -1,0 +1,9 @@
+- name: reate var
+  hosts: localhost
+  connection: local
+  var:
+    NAME: "sai"
+    Location: "HYD"
+  tasks:
+  - debug:
+    msg: "My name is {{NAME}} and i am from {{Location}}"
