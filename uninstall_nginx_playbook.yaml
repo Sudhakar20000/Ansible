@@ -1,0 +1,14 @@
+- name: uninstall nginx
+  hosts: frountend
+  become: yes
+  tasks:
+  - name: stop nginx
+    ansible.builtin.service:
+      name: nginx
+      state: stop
+      enable: no
+  - name: uninstall
+    package:
+      name: nginx
+      state: rmove
+    
