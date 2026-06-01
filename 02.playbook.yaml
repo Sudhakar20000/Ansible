@@ -1,6 +1,6 @@
-- name: demo on debug
+- name: demo for debug
   hosts: frountend
   tasks:
-    - name: demo on debug
+    - name: hello world
       debug:
-      msg: "helloworld!"  
+        msg: "hello world"
