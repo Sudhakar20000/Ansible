@@ -1,7 +1,7 @@
-- name: reate var
+- name: create var
   hosts: localhost
   connection: local
-  var:
+  vars:
     NAME: "sai"
     Location: "HYD"
   tasks:
