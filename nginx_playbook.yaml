@@ -1,6 +1,6 @@
 - name: install nginx
   hosts: frountend
-  decome: yes
+  become: yes
   tasks:
   - name: install nginx
     ansible.buidin.packages:
