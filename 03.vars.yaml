@@ -5,7 +5,7 @@
     age: 22
   tasks:
     - name: define vars
-      vars
+      vars:
         Name: ramu
       debug:
         msg: "Hi {{Name}} and my age {{age}}"
