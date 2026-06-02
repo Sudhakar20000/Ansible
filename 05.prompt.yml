@@ -1,0 +1,13 @@
+- name: prompt sample
+  hosts: frountend
+  vars:
+    - name: username
+      prompt: enter the user name
+      private: false
+    - name: password
+      prompt: enter the password
+      private: true
+  tasks:
+  - name: Display the prompt
+    debug:
+      msg: "username is {{username}} and password {{password}}"    
