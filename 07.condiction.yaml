@@ -1,14 +1,15 @@
 - name: condection example
   hosts: frountend
   vars_prompt:
-    - name: prompt
+    - name: value
       prompt: enter the value
+      private: false
   tasks:
     - name: example1
       debug:
         msg: the given value is less then 50
-      when: prompt < 50
+      when: value | int < 50
     - name: example2
       debug:
         msg: the given value is grater then 50
-      when: prompt > 50
+      when: value | int > 50
