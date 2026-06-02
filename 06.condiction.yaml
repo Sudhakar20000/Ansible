@@ -3,7 +3,7 @@
   vars:
     VALUE: 50
   tasks:
-    - name: if the value more then 40   
+    - name: value    
       debug:
-        msg: "value is less then 50"
-      when VALUE < 60
+        msg: "value is less then 60"
+      when: VALUE < 60
