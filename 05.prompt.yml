@@ -1,6 +1,6 @@
 - name: prompt sample
   hosts: frountend
-  vars:
+  vars_prompt:
     - name: username
       prompt: enter the user name
       private: false
