@@ -1,0 +1,11 @@
+- name: play var define
+  hosts: frountend
+  vars:
+    Name: raju
+    age: 22
+  tasks:
+    - name: define vars
+      vars
+        Name: ramu
+      debug:
+        msg: "Hi {{Name}} and my age {{age}}"
