@@ -1,0 +1,11 @@
+- name: loop for install
+  hosts: frountend
+  become: true
+  tasks:
+    - name: install packages
+      packages:
+        name: "{{task}}"
+        state: present
+      loop:
+        - git
+        - nginx
