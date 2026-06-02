@@ -1,0 +1,14 @@
+- name: condection example
+  hosts: frountend
+  vars_prompt:
+    - name: prompt
+      prompt: enter the value
+  tasks:
+    - name: example1
+      debug:
+        msg: the given value is less then 50
+      when: prompt < 50
+    - name: example2
+      debug:
+        msg: the given value is grater then 50
+      when: prompt > 50
