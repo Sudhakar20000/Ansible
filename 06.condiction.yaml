@@ -1,0 +1,9 @@
+- name: condiction example
+  hosts: frountend
+  vars:
+    VALUE: 50
+  tasks:
+    - name: if the value more then 40   
+      debug:
+        msg: "value is less then 50"
+      when VALUE < 60
