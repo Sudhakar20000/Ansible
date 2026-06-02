@@ -1,0 +1,5 @@
+- name: group var demo
+  hosts: frountend
+  tasks:
+    debug:
+      msg: " hi my name {{NAME}}. I am from {{CITY}}"
